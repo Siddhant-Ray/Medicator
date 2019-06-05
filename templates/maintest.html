@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+    }
+    p {font-size: 16px;}
+    .margin {margin-bottom: 45px;}
+    .bg-1 { 
+      background-color: #303641; /* Green */
+      color: #ffffff;
+    }
+    .bg-2 { 
+      background-color: #233864; /* Dark Blue */
+      color: #ffffff;
+    }
+    .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+    }
+    .bg-4 { 
+      background-color: #c04b4b; /* Black Gray */
+      color: #fff;
+    }
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+    }
+    .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+    }
+  
+  
+  
+.button {
+  background-color: #4D73F0; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonActive {
+  background-color: rgb(5, 4, 59); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Diseases</a></li>
+        <li><a href="#">Symptoms</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h1 class="margin">Disease Prediction System</h1>
+  <h3>Click on the required symptom buttons</h3>
+  <h2></h2>
+<p>For the system to work, enter a minimum of two symptoms</p>
+
+
+<button id = "button1" class="button" onclick = "changeColour1()">Fever</button>
+<button id = "button2"class="button" onclick = "changeColour2()">Cough </button>
+<button id = "button3"class="button" onclick = "changeColour3()">Runny nose </button>
+<button id = "button4"class="button" onclick = "changeColour4()">Headache </button>
+<button id = "button5"class="button" onclick = "changeColour5()">Breathlessness </button>
+
+
+<button id = "button6" class="button" onclick = "changeColour6()">Diarrhea </button>
+<button id = "button7"class="button" onclick = "changeColour7()">Abdominal pain </button>
+<button id = "button8"class="button" onclick = "changeColour8()">Vomiting </button>
+<button id = "button9"class="button" onclick = "changeColour9()">Nosebleeding </button>
+<button id = "button10"class="button" onclick = "changeColour10()">Dizziness </button>
+
+
+<button id = "button11" class="button" onclick = "changeColour11()">Insomnia </button>
+<button id = "button12"class="button" onclick = "changeColour12()">Eye swelling</button>
+<button id = "button13"class="button" onclick = "changeColour13()">Redness in eye</button>
+<button id = "button14"class="button" onclick = "changeColour14()">Nausea </button>
+<button id = "button15"class="button" onclick = "changeColour15()">Sweating </button>
+<button id = "button16"class="button" onclick = "changeColour16()">Fatigue </button>
+<button id = "button17"class="button" onclick = "changeColour17()">Joint pain </button>
+<br><br><br>
+
+
+<form id="theForm" action="http://localhost:5000/data_tx" method="POST">
+  <input id="btn" name=btn value="Hello_World" style="display:none"> 
+  <input type="button" value="Submit" onclick="display()" style="background:black">
+</form>
+<p id = "para"></p>
+
+
+
+
+</div>
+
+<!-- Second Container 
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+-->
+
+<!-- Third Container (Grid) 
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+-->
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p> Techno-Riders</p> 
+</footer>
+
+<script>
+var symptoms = [];
+
+function changeColour1() {
+   var element = document.getElementById("button1");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Fever");
+   
+}
+
+function changeColour2() {
+   var element = document.getElementById("button2");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Cough");
+   
+}
+
+function changeColour3() {
+   var element = document.getElementById("button3");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Runny nose");
+   
+}
+
+function changeColour4() {
+   var element = document.getElementById("button4");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Headache");
+   
+}
+
+function changeColour5() {
+   var element = document.getElementById("button5");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Breathlessness");
+   
+}
+
+function changeColour6() {
+   var element = document.getElementById("button6");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Diarrhea");
+   
+}
+
+function changeColour7() {
+   var element = document.getElementById("button7");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Abdominal pain");
+}
+
+function changeColour8() {
+   var element = document.getElementById("button8");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Vomiting");
+}
+
+function changeColour9() {
+   var element = document.getElementById("button9");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Nosebleed");
+}
+
+function changeColour10() {
+   var element = document.getElementById("button10");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Dizziness");
+}
+
+function changeColour11() {
+   var element = document.getElementById("button11");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Insomnia");
+}
+
+function changeColour12() {
+   var element = document.getElementById("button12");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Eye swelling");
+}
+
+function changeColour13() {
+   var element = document.getElementById("button13");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Redness in eye");
+}
+
+function changeColour14() {
+   var element = document.getElementById("button14");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Nausea");
+}
+
+function changeColour15() {
+   var element = document.getElementById("button15");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Sweating");
+}
+
+function changeColour16() {
+   var element = document.getElementById("button16");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Fatigue");
+}
+
+function changeColour17() {
+   var element = document.getElementById("button17");
+   element.classList.toggle("buttonActive");
+   symptoms.push("Joint pain");
+}
+
+
+
+function display() {
+  document.getElementById("para").innerHTML = symptoms;
+  document.getElementById("btn").value = String(symptoms);
+  document.getElementById("theForm").submit();
+}
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

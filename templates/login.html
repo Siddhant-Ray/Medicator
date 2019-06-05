@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #303641;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-login">
+        <div id="title">
+            <i class="material-icons lock">lock</i> Begin
+        </div>
+
+        <form action="http://localhost:5000/login" method="POST">
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="uid" name=uid placeholder="Enter Aadhar UID Number" type="text" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+            <br>
+            <br>
+            <div class="remember-me">
+                <input type="checkbox">
+                <span style="color: #DDD">Returning User?</span>
+            </div>
+            
+            <br>
+
+            <input type="submit" value="Log In" />
+        </form>
+        <br>
+        <div class="forgot-password">
+            <a href="#">Don't have an UID?</a>
+        </div>
+    </div>
+</body>
+
+</html>

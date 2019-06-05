@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #B3BEF4; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  
+  
+  
+.button23 {
+  background-color: #4D73F0; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 250px;
+}
+
+.button24 {
+  background-color: #21283F; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 250px;
+}
+
+.buttonActive23 {
+  background-color: #0E2982; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 250px;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button></div>
+      <a class="navbar-brand" href="#">TECHNO-RIDERS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">We are concerned about your health.<br>
+  Please cooperate with us and select the symptoms. </h3>  
+  <h3></h3>
+  
+<div class="container">
+<div class="row">
+<div class="col-sm-3"><button id = "button1" class="button23" onclick = "changeColour(1)">Fever</button></div>
+<div class="col-sm-3"><button id = "button2"class="button23" onclick = "changeColour(2)">Cough </button></div>
+<div class="col-sm-3"><button id = "button3"class="button23" onclick = "changeColour(3)">Runny nose </button></div>
+<div class="col-sm-3"><button id = "button4"class="button23" onclick = "changeColour(4)">Headache </button></div>
+</div>
+<div class="row">
+<div class="col-sm-3"><button id = "button5"class="button23" onclick = "changeColour(5)">Breathlessness </button></div>
+<div class="col-sm-3"><button id = "button6" class="button23" onclick = "changeColour(6)">Diarrhea </button></div>
+<div class="col-sm-3"><button id = "button7"class="button23" onclick = "changeColour(7)">Abdominal pain </button></div>
+<div class="col-sm-3"><button id = "button8"class="button23" onclick = "changeColour(8)">Vomiting </button></div>
+</div>
+<div class="row">
+<div class="col-sm-3"><button id = "button9"class="button23" onclick = "changeColour(9)">Nosebleeding </button></div>
+<div class="col-sm-3"><button id = "button10"class="button23" onclick = "changeColour(10)">Dizziness </button></div>
+<div class="col-sm-3"><button id = "button11" class="button23" onclick = "changeColour(11)">Insomnia </button></div>
+<div class="col-sm-3"><button id = "button12"class="button23" onclick = "changeColour(12)">Eye swelling</button></div>
+</div>
+<div class = "row">
+<div class="col-sm-3"><button  id = "button13"class="button23" onclick = "changeColour(13)">Redness in eye</button></div>
+<div class="col-sm-3"><button id = "button14"class="button23" onclick = "changeColour(14)">Nausea </button></div>
+<div class="col-sm-3"><button id = "button15"class="button23" onclick = "changeColour(15)">Sweating </button></div>
+<div class="col-sm-3"><button id = "button16"class="button23" onclick = "changeColour(16)">Fatigue</button></div>
+</div>
+<div class = "row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4"><button id = "button17"class="button23" onclick = "changeColour(17)">Joint pain</button></div>
+<div class="col-sm-4"></div>
+</div>
+<br>
+
+
+<div class = "row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4"><button id = "button18"class="button24" onclick = "display()">SUBMIT
+</button></div>
+<div class="col-sm-4"></div>
+</div>
+<p id = "para"></p>
+<p id = "para3"></p>
+
+
+<form id="theForm" action="http://localhost:5000/data_tx" method="POST">
+  <input id="btn" name=btn value="Hello_World"> 
+  <input type="button" value="Submit" onclick="display()">
+</form>
+<p id = "para"></p>
+
+
+
+</div>
+
+<!-- Second Container 
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+-->
+
+<!-- Third Container (Grid) 
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+-->
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p> Techno-Riders</p> 
+</footer>
+
+<script>
+var cn = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+var symptoms = [];
+
+function changeColour(n) {
+   var element = document.getElementById("button"+n);
+   element.classList.toggle("buttonActive23");
+   cn[n-1] +=1
+   
+   
+}
+
+function display() {
+var i;
+for(i = 0; i<17; i++)
+{
+if(cn[i]%2==1)
+{
+var n=i+1
+var x = document.getElementById("button"+n).textContent;
+symptoms.push(x);
+}
+}
+
+  document.getElementById("para").innerHTML = symptoms;
+  document.getElementById("btn").value = String(symptoms);
+  document.getElementById("theForm").submit();
+
+
+  
+}
+
+</script>
+
+</body>
+</html>
